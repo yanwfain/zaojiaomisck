@@ -1,0 +1,12 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* "iconPath": "",
+        "selectedIconPath": "/image/fcaa740cfb93231c08ac5687d6fe709.png" */

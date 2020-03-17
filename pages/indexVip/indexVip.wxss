@@ -1,0 +1,98 @@
+/* pages/indexVip/indexVip.wxss */
+.title{
+  margin:40rpx auto;
+  font-size: 34rpx;
+  text-align: center;
+  width: 100%;
+}
+.txt{
+  font-size: 26rpx;
+  margin: 30rpx auto;
+  width: 90%;
+}
+.cont_title{
+  width: 90%;
+  font-size: 26rpx;
+  color: rgb(240, 151, 31);
+  text-align: center;
+  margin: 0 auto;
+  margin-top:50rpx;
+  border-top:2rpx solid #ccc;
+  padding-top:20rpx;
+}
+.cont_title1{
+  width: 90%;
+  font-size: 26rpx;
+  color:red;
+  margin: 0 auto;
+  text-align: center;
+  margin-top:10rpx;
+
+}
+.cont_list{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  padding:0 4%;
+  border-bottom: 2rpx solid rgb(242, 242, 242);
+  height: 120rpx;
+  line-height: 120rpx;
+
+}
+.headimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin-right: 34rpx;
+}
+.cont_list .headimg image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  border-radius: 100%;
+}
+.left{
+  font-size: 30rpx;
+
+}
+input{
+  border: none;
+  font-size: 30rpx;
+  width: 200rpx;
+  color: gray;
+  text-align: right;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  margin-right: 50rpx;
+}
+/* .main-item-input {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2rpx solid gray;
+  padding: 10rpx;
+  border-radius: 10rpx;
+} */
+.picker-area-text{
+  color: gray;
+  width: 200rpx;
+  text-align: right;
+  margin-right: 30rpx;
+}
+.sunbb{
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: white;
+  background: rgb(240, 151, 31);
+  margin-top: 150rpx;
+}

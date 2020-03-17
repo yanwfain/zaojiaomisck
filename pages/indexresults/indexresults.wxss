@@ -1,0 +1,266 @@
+/* pages/indexresults/indexresults.wxss */
+.top_english{
+  width: 96%;
+  margin: 0 auto;
+  font-size: 30rpx;
+}
+.cp_txt{
+  font-size: 26rpx;
+  color: rgb(223, 127, 40);
+   width: 96%;
+  margin: 0 auto;
+}
+.cont_usernums{
+  width: 100%;
+  height: 500rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.yuan1{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 100%;
+  border:3rpx solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.yuan2{
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 100%;
+  border:3rpx solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yuan3{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 100%;
+  border:3rpx solid rgb(206, 206, 206);
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.yuan_bag{
+  width:285rpx;
+  height: 285rpx;
+  position: absolute;
+
+  border:18rpx solid rgb(255, 174, 0);
+  border-radius: 100%;
+}
+.yuan4{
+   width: 250rpx;
+  height: 250rpx;
+  border-radius: 100%;
+  border:3rpx solid rgb(206, 206, 206);
+}
+.fennum{
+  font-size: 50rpx;
+  font-weight: 600;
+  /* padding: 20rpx 0; */
+}
+.fennum text{
+  font-size: 24rpx;
+   color: rgb(255, 174, 0);
+}
+.time{
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.txt_ji{
+  font-size: 34rpx;
+  color: rgb(255, 174, 0);
+  padding: 20rpx 0;
+}
+.cont_titl_res{
+  display: flex;
+  align-items: center;
+  width: 96%;
+  margin: 0 auto;
+}
+.cont_titl_res image{
+  width: 44rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+}
+.cont_list{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  margin-bottom: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.txt{
+  width: 18%;
+  font-size: 28rpx;
+
+}
+.cont_tiao{
+  width: 80%;
+  height: 30rpx;
+  position: relative;
+  background: rgb(201, 202, 202);
+}
+.cont_delit_res{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 30rpx;
+  
+
+}
+.num{
+  position: absolute;
+  height: 30rpx;
+  line-height: 30rpx;
+  top:0;
+  right: 0;
+  font-size: 24rpx;
+  color: white;
+}
+.shiba{
+  position: absolute;
+  width: 2rpx;
+  height: 30rpx;
+  top:0;
+  left: 62%;
+   background: rgb(115, 183, 192);
+}
+.ershisi{
+  position: absolute;
+  width: 2rpx;
+  height: 30rpx;
+  top:0;
+  left: 82%;
+  background: rgb(115, 183, 192);
+}
+.shibanum{
+   position: absolute;
+font-size: 24rpx;
+  bottom:-30rpx;
+  left:59%;
+}
+.ershisinum{
+ position: absolute;
+font-size: 24rpx;
+  bottom:-30rpx;
+  left:80%;
+}
+.sanshinum{
+   position: absolute;
+font-size: 24rpx;
+  bottom:-30rpx;
+  right:1%;
+}
+
+/* .cepjie{
+  background: rgb(255, 174, 0);
+  color: white;
+  
+} */
+.cepshuo{
+   background: white;
+  color: black;
+}
+
+
+/* pages/indexcpdedlit/indexcpdedlit.wxss */
+.bot_fixed{
+  width: 100%;
+  height: 110rpx;
+  position: fixed;
+  background: white;
+  bottom: 0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bot_fixed view{
+  width: 50%;
+  text-align: center;
+  height: 120rpx;
+  font-size: 34rpx;
+  line-height: 110rpx;
+}
+/* .cepshuo{
+   background: rgb(255, 174, 0);
+  color: white;
+  
+} */
+.top_title{
+  width: 45%;
+  padding: 10rpx 0; 
+  border-radius: 36rpx;
+  border:2rpx solid rgb(223, 127, 40);
+  margin: 0 auto;
+  margin-top:20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}
+.top_title image{
+  width: 40rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+.cont_tit{
+  width: 94%;
+  margin: 40rpx auto;
+}
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cont_tit_txt{
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.res_txt{
+  padding: 2rpx 6rpx;
+  background: rgb(244, 187, 72);
+  color: white;
+  font-size: 24rpx;
+
+}
+.res_txt1{
+   padding: 2rpx 6rpx;
+  /* background: rgb(211, 82, 0);
+  color: white; */
+  font-size: 24rpx;
+}
+.cont_txt_delit1{
+  width: 100%;
+  margin:20rpx auto;
+  font-size: 26rpx;
+  color: gray;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid rgb(241, 241, 241);
+}
+.active{
+  color: white;
+ background: rgb(211, 82, 0);
+}
+.txt_bottom{
+  margin: 0 auto;
+  font-size: 27rpx;
+  /* font-weight: 600; */
+  width: 96%;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+  color:gray;
+}

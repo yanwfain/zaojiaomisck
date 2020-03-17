@@ -1,0 +1,17 @@
+<view class="cont">
+{{num+1}}、  {{list[num].subject}}
+</view>
+<view class="xuna_cont" >
+  <view class="{{tid==1?'active':''}}" data-tatalnum="{{num}}" wx:if="{{list[num].subject_type==1}}" data-tid="1" data-nums="9" data-result="是" data-abc="A" bindtap="seleFn">A. 是</view>
+    <view class="{{tid==1?'active':''}}" data-tatalnum="{{num}}" wx:if="{{list[num].subject_type==2}}" data-tid="1" data-nums="3" data-result="是" data-abc="A" bindtap="seleFn">A. 是</view>
+  <view class="{{tid==2?'active':''}}" data-tatalnum="{{num}}" data-tid="2" data-nums="0" data-result="不是" data-abc="B" bindtap="seleFn">B. 不是</view>
+  <!-- <view class="{{tid==3?'active':''}}" data-tid="3" data-nums="3" data-result="{{list[num].answer_c}}" data-abc="C" bindtap="seleFn">C. {{list[num].answer_c}}</view> -->
+</view>
+<view class="cont_ti">
+  <view class="top" bindtap="botFn">上一题</view>
+  <view class="numss_num">{{num+1}}</view>
+  <view class="bott" bindtap="topFn">下一题</view>
+
+</view>
+<view class="tijiao" wx:if="{{isShowhide}}" bindtap="submit">提交</view>
+<view class="opt" wx:if="{{isopctshow}}"></view>

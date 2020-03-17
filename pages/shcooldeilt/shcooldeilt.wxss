@@ -1,0 +1,112 @@
+/* pages/shcooldeilt/shcooldeilt.wxss */
+
+.top_title {
+  width: 96%;
+  margin: 20rpx auto;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.title_user {
+  width: 96%;
+  margin: 20rpx auto;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.title_user image {
+  width: 20rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+}
+
+.user_name {
+  margin-right: 40rpx;
+}
+
+.img-delit {
+  width: 96%;
+  height: 400rpx;
+  margin: 0 auto;
+  margin-left: 2%;
+}
+
+.txt_delit_1 {
+  width: 94%;
+  margin: 40rpx auto;
+  font-size: 26rpx;
+}
+
+.txt_delit_2 {
+  width: 94%;
+  margin: 40rpx auto;
+  font-size: 26rpx;
+  color: rgb(223, 127, 40);
+}
+
+.img-delit2 {
+  width: 96%;
+  height: 400rpx;
+  margin: 0 auto;
+  margin-left: 2%;
+}
+
+.num_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30rpx 0;
+}
+
+.yuan_title_num {
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  border-radius: 100%;
+  color:white;
+  background: rgb(223, 127, 40);
+}
+
+.y1 {
+  width: 18rpx;
+  height: 18rpx;
+  background: rgb(223, 127, 40);
+  border-radius: 100%;
+  margin: 0 6rpx;
+}
+
+.y2 {
+  width: 24rpx;
+  height: 24rpx;
+  background: rgb(223, 127, 40);
+  border-radius: 100%;
+   margin: 0 6rpx;
+}
+
+.y3 {
+  width: 30rpx;
+  height: 30rpx;
+  background: rgb(223, 127, 40);
+  border-radius: 100%;
+   margin: 0 6rpx;
+}
+
+.left {
+  margin-right: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  margin-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

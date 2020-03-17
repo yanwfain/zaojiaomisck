@@ -1,0 +1,61 @@
+/* pages/meliu/meliu.wxss */
+.title{
+  display: flex;
+  align-items: center;
+  margin: 30rpx auto;
+  width: 96%;
+}
+.title image{
+  width: 38rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+.txt_title{
+  font-size: 30rpx;
+  color: #DF7F28;
+
+}
+.txtert{
+  width: 82%;
+  margin: 0 auto;
+  height: 400rpx;
+  padding: 4%;
+  font-size: 26rpx;
+  color:gray;
+  border:2rpx solid rgb(201, 202, 202);
+  border-radius: 6rpx;
+}
+.phone_view{
+  width: 82%;
+  padding: 4%;
+  margin: 0 auto;
+  font-size: 30rpx;
+   border:2rpx solid rgb(201, 202, 202);
+  border-radius: 6rpx;
+  display: flex;
+  justify-content:center;
+  margin-top:50rpx;
+}
+.inp_phone{
+  width: 68%;
+  
+}
+.tet_phone{
+  width: 26%;
+  margin-right: 6%;
+
+}
+.fid{
+  width: 80%;
+  position: fixed;
+  align-items: center;
+  color: white;
+  background: rgb(248, 204, 73);
+  text-align: center;
+  height: 86rpx;
+  line-height: 86rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  left:10%;
+  bottom: 5%;
+}

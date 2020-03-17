@@ -1,0 +1,80 @@
+/* pages/indexcpdedlit/indexcpdedlit.wxss */
+.bot_fixed{
+  width: 100%;
+  height: 110rpx;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.bot_fixed view{
+  width: 50%;
+  text-align: center;
+  height: 120rpx;
+  font-size: 34rpx;
+  line-height: 110rpx;
+}
+.cepjie{
+  background: white;
+  color: black;
+  
+}
+.cepshuo{
+   background: rgb(255, 174, 0);
+  color: white;
+  
+}
+.top_title{
+  width: 45%;
+  padding: 10rpx 0; 
+  border-radius: 36rpx;
+  border:2rpx solid rgb(223, 127, 40);
+  margin: 0 auto;
+  margin-top:20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}
+.top_title image{
+  width: 40rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+.cont_tit{
+  width: 94%;
+  margin: 40rpx auto;
+}
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cont_tit_txt{
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.res_txt{
+  padding: 2rpx 6rpx;
+  background: rgb(244, 187, 72);
+  color: white;
+  font-size: 24rpx;
+
+}
+.res_txt1{
+   padding: 2rpx 6rpx;
+  background: rgb(211, 82, 0);
+  color: white;
+  font-size: 24rpx;
+}
+.cont_txt_delit1{
+  width: 100%;
+  margin:20rpx auto;
+  font-size: 26rpx;
+  color: gray;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid rgb(241, 241, 241);
+}

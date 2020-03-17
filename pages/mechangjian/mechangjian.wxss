@@ -1,0 +1,29 @@
+/* pages/mechangjian/mechangjian.wxss */
+.cont_list{
+  
+  margin: 30rpx auto;
+  padding: 0 30rpx;
+  border-bottom:2epx solid rgb(241, 241, 241);
+
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.title image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+.txt_title{
+  font-size: 30rpx;
+  color: #DF7F28;
+
+}
+.txt{
+  width: 85%;
+  margin: 0 auto;
+  font-size: 26rpx;
+  color: rgb(100, 99, 99);
+  margin-top:10rpx;
+}

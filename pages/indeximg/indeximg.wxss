@@ -1,0 +1,10 @@
+/* pages/indeximg/indeximg.wxss */
+image{
+  width: 100%;
+  height: 1540rpx;
+}
+view{
+  width: 96%;
+  margin: 0 auto;
+  margin-top:20rpx;
+}

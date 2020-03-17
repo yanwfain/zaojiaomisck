@@ -1,0 +1,67 @@
+<view class="top_title">
+  <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+  <view class="txt">测评说明</view>
+</view>
+
+
+
+<view class="bot_fixed">
+  <view class="cepjie" bindtap="cepjieguoFn">测评结果</view>
+  <view class="cepshuo" >测评说明</view>
+</view>
+<view class="cont_tit">
+  <view class="title">
+    <view class="cont_tit_txt">大运动</view>
+    <view class="res_txt">优秀</view>
+  </view>
+  <view class="cont_txt_delit1">
+    本月宝宝大运动能力发展优秀。能够站立，且爬行速度提高，宝宝开始障碍爬行及扶物行走的关键期。需要家长提供合适的环境，让孩子更多，更好的进行大运动练习的游戏。
+  </view>
+</view>
+<view class="cont_tit">
+  <view class="title">
+    <view class="cont_tit_txt">自我能力</view>
+    <view class="res_txt">优秀</view>
+  </view>
+  <view class="cont_txt_delit1">
+    本月宝宝大运动能力发展优秀。能够站立，且爬行速度提高，宝宝开始障碍爬行及扶物行走的关键期。需要家长提供合适的环境，让孩子更多，更好的进行大运动练习的游戏。
+  </view>
+</view>
+
+<view class="cont_tit">
+  <view class="title">
+    <view class="cont_tit_txt">精细</view>
+    <!-- <view class="res_txt">优秀</view> -->
+    <view class="res_txt1">良好</view>
+  </view>
+  <view class="cont_txt_delit1">
+    本月宝宝大运动能力发展优秀。能够站立，且爬行速度提高，宝宝开始障碍爬行及扶物行走的关键期。需要家长提供合适的环境，让孩子更多，更好的进行大运动练习的游戏。
+  </view>
+</view>
+
+<view class="cont_tit">
+  <view class="title">
+    <view class="cont_tit_txt">语言</view>
+    <!-- <view class="res_txt">优秀</view> -->
+    <view class="res_txt1">良好</view>
+  </view>
+  <view class="cont_txt_delit1">
+    本月宝宝大运动能力发展优秀。能够站立，且爬行速度提高，宝宝开始障碍爬行及扶物行走的关键期。需要家长提供合适的环境，让孩子更多，更好的进行大运动练习的游戏。
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view style="width:100%;height:100rpx;"></view>

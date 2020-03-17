@@ -1,0 +1,10 @@
+  <view class="title">
+    <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+    <view class="txt_title">每个月的大目标是什么意思</view>
+  </view>
+  <textarea bindinput="bindinput" name="请输入您的宝贵意见我们将更好的为您服务" placeholder="请输入您的宝贵意见吗，我们将更好的为您服务" class="txtert" ></textarea>
+  <view class="phone_view">
+      <view class="tet_phone">联系电话</view>
+      <input bindinput="inpFn" class="inp_phone" value="{{inp_val2}}" placeholder="请输入手机号" />
+  </view>
+  <view class="fid" bindtap="submit">确认提交</view>

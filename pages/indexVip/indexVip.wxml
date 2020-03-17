@@ -1,0 +1,39 @@
+<view class="title">
+  会员开卡须知
+</view>
+<view class="txt">1.自开卡日起，会员课程定制服务有限期1年</view>
+<view class="txt">2.每个月的月初新测评和月中、月末的两次更新测评都是根据宝宝生日计算的日期，不一定和日历同步。</view>
+<view class="txt">3.因课程是定制系列课程，只有完成当前系列所有课程才会更新下一系列课程。</view>
+<view class="txt">4.为了宝宝的锻炼效果，课程可能会不定期重复出现，需要家长和宝宝按照推送重复训练，不可直接跳过。</view>
+<view class="txt">5、因课程为虚拟内容服务，无法退换、转让，敬请理解。</view>
+<view class="cont_title">
+  请确认宝宝信息填写无误，开卡后信息无法更改
+</view>
+<view class="cont_title1">（目前只针对9-36个月龄宝宝）</view>
+  <view class="cont_list">
+    <view class="left">性别</view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChange" value="{{ pickerProData.index }}" range="{{ pickerProData.items }}">
+        <view class="picker-area-text">
+          {{pickerProData.items[pickerProData.index]}}
+        </view>
+      </picker>
+      <!-- <view class="rigt_txt"></view> -->
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="left">生日</view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChanges" mode="date" value="{{op}}" wx:if="{{!year}}">
+        <view class="picker-area-text">
+          {{mony?mony:"请选择日期"}}
+        </view>
+      </picker>
+      <view class="picker-area-text" wx:if="{{year}}">
+          {{year}}
+        </view>
+      <!-- <view class="rigt_txt"></view> -->
+    </view>
+  </view>
+
+<view class="sunbb" bindtap="sunbit">确认无误，立即开卡</view>

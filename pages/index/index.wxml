@@ -1,0 +1,300 @@
+<view class="user_top">
+  <view class="user_delit">
+    <image class="user_head" src="{{head_img}}"></image>
+    <view class="cont" style="width:24%; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+      <view>{{name}}</view>
+      <view>{{today?today:'暂无'}}</view>
+    </view>
+    <view class="cont" style="margin-right:22rpx;">
+      <view>身高：
+        <text class="batxt">{{height_name}}</text> </view>
+      <view>{{height?height+'cm':'暂无'}}</view>
+    </view>
+    <view class="cont" style="margin-right:22rpx;">
+      <view>体重：
+        <text class="batxt">{{weight_name}}</text> </view>
+      <view>{{weight?weight+'kg':'暂无'}}</view>
+    </view>
+  </view>
+</view>
+<view class="img">
+  <swiper class='shop_swiper' indicator-dots autoplay="true" indicator-active-color="#fff" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{list_img}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.img_url}}" class='lbImg' data-id='{{item.id}}' data-id="{{item.id}}" data-title='{{item.title}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+
+  </swiper>
+  <!-- <image src="../../image/banner.png"></image> -->
+</view>
+<view class="nav_shuju">
+  <view class="top_tit">
+    <view class="left_shuju">
+      <image src="../../image/shuju.png"></image>
+      <view>数据测评</view>
+    </view>
+    <view class="left_shuju" bindtap="cepinFn">
+      <image src="../../image/cp.png"></image>
+      <view>开始测评</view>
+    </view>
+  </view>
+  <view class="cont_content">
+    <view class="cont_nav" bindtap="showFn">
+      <view class="delits">{{list_1}} {{list_data1_num?list_data1_num:'0'}}/300</view>
+      <view class="heng_s">
+        <view class="nei_heng" style="width:{{list_data1}}%"></view>
+      </view>
+    </view>
+    <view class="cont_nav" bindtap="showFn">
+      <view class="delits">{{list_2}} {{list_data2_num?list_data2_num:'0'}}/300</view>
+      <view class="heng_s">
+        <view class="nei_heng" style="width:{{list_data2}}%"></view>
+      </view>
+    </view>
+    <view class="cont_nav" bindtap="showFn">
+      <view class="delits">{{list_3}} {{list_data3_num?list_data3_num:'0'}}/300</view>
+      <view class="heng_s">
+        <view class="nei_heng" style="width:{{list_data3}}%"></view>
+      </view>
+    </view>
+    <view class="cont_nav" bindtap="showFn">
+      <view class="delits">{{list_4}} {{list_data4_num?list_data4_num:'0'}}/300</view>
+      <view class="heng_s">
+        <view class="nei_heng" style="width:{{list_data4}}%"></view>
+      </view>
+    </view>
+    <view class="cont_nav" bindtap="showFn">
+      <view class="delits">{{list_5}} {{list_data5_num?list_data5_num:'0'}}/300</view>
+      <view class="heng_s">
+        <view class="nei_heng" style="width:{{list_data5}}%"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="img2" bindtap="img_showfn">
+  <image src="../../image/39aa2621f953b3ec4745d3952f9b361.png"></image>
+</view>
+<view class="jin_nav">
+  <view wx:if="{{is_showhide}}">
+    <view class="top_jin_tit">
+      <view class="left">
+        <image src="../../image/kecheng.png"></image>
+        <view class="title">
+          <view class="tit_j">今日订制课程</view>
+          <!-- <view class="tit_txt">
+            <view>小目标1：初次尝试</view>
+            <view>已完成0%</view>
+          </view> -->
+        </view>
+      </view>
+      <view class="rights" wx:if="{{!showinnert}}">{{countdown.minute}}:{{countdown.second}}</view>
+      <view class="right" bindtap="ressertFn" wx:if="{{showinnert}}">完成</view>
+     
+    </view>
+    <view wx:for="{{list_showhide}}">
+      <view class="cont_nav_ke" bindtap="videoFn" wx:if="{{item.type==1}}" data-resource_id="{{item.resource_id}}" data-id="{{item.id}}" data-url="{{item.url}}">
+        <video src="{{item.url}}" catchtap="video_fn"></video>
+        <view class="nav_ke_tit">
+          <view>{{item.name}}</view>
+          <view class="txt_conts">
+            <text style="color:rgb(223, 127, 40)"></text>{{item.subject_category_name}} </view>
+        </view>
+        <view class="{{item.is_over == 2?'active':'wanc'}}" wx:if="{{item.is_over == 1}}" data-id="{{item.id}}" catchtap="bindwanFn">完成</view>
+        <view class="{{item.is_over == 2?'active':'wanc'}}" wx:if="{{item.is_over == 2}}" data-id="{{item.id}}" catchtap="bindwanFn">已完成</view>
+      </view>
+      <view class="cont_nav_ke" bindtap="audiosFn" wx:if="{{item.type==2}}" data-id="{{item.id}}" data-url="{{item.url}}" data-name="{{item.name}}" data-resource_id="{{item.resource_id}}">
+        <image src="{{item.img}}"></image>
+        <view class="nav_ke_tit">
+          <view>{{item.name}}</view>
+          <view class="txt_conts">
+            <text style="color:rgb(223, 127, 40)"></text>{{item.subject_category_name}} </view>
+        </view>
+        <view class="{{item.is_over == 2?'active':'wanc'}}" wx:if="{{item.is_over == 1}}" data-id="{{item.id}}" catchtap="bindwanFn">完成</view>
+        <view class="{{item.is_over == 2?'active':'wanc'}}" wx:if="{{item.is_over == 2}}" data-id="{{item.id}}" catchtap="bindwanFn">已完成</view>
+      </view>
+    </view>
+
+
+    <!-- <view class="cont_nav_ke">
+      <image src="../../image/1581059569(1).jpg"></image>
+      <view class="nav_ke_tit">
+        <view>2:爬圈圈</view>
+        <view class="txt_conts">
+          <text style="color:rgb(223, 127, 40)">感统</text>肢体技能 </view>
+      </view>
+      <view class="wanc">完成</view>
+    </view>
+    <view class="cont_nav_ke">
+      <image src="../../image/1581059569(1).jpg"></image>
+      <view class="nav_ke_tit">
+        <view>3:爬圈圈</view>
+        <view class="txt_conts">
+          <text style="color:rgb(223, 127, 40)">感统</text>肢体技能 </view>
+      </view>
+      <view class="wanc">完成</view>
+    </view> -->
+    <view class="look_ke" bindtap="lookallFn">查看已完成课程</view>
+  </view>
+  <view class="cep_shiw" wx:if="{{is_data}}">暂无推荐信息</view>
+  <view class="cep_shiw" wx:if="{{!is_showhide&&!is_data}}">{{is_txt}}
+    <text class="kaitong" wx:if="{{!vip_over_timee&&vip_overshow}}" bindtap="vipFn_vip">开通会员</text>
+  </view>
+</view>
+<view class="tit_xiaobbei">
+  <image src="../../image/xuexi1.png"></image>
+  <view>小贝学堂</view>
+</view>
+<view class="xiaobi_delit">
+  <view class="tit_xiaobei1">
+    <view class="tit_xiaobei1_txt">每天音乐时间</view>
+    <view class="gengduo" bindtap="audioFn">
+      <view>更多</view>
+      <image src="../../image/chakangengduo.png"></image>
+    </view>
+  </view>
+  <view class="xaoxie_t">用音乐陪伴小小宝，开启健康活力的一天</view>
+  <view class="nav_xiaobie" bindtap="binaudeFn" data-url="{{data_lsit_au.music_url}}">
+    <view class="left_nav_xiao">
+      <view class="txt1">{{data_lsit_au.name}}</view>
+      <view class="txt2">为宝宝订制的全新启蒙儿歌</view>
+      <view class="clicklook">点击查看</view>
+    </view>
+    <image src="{{data_lsit_au.music_image}}"></image>
+  </view>
+  <view class="tit_xiaobei1">
+    <view class="tit_xiaobei1_txt">本周绘本精彩</view>
+    <view class="gengduo" bindtap="videFn">
+      <view>更多</view>
+      <image src="../../image/chakangengduo.png"></image>
+    </view>
+  </view>
+  <view class="xaoxie_t">最好的陪伴适合孩子一起</view>
+  <view class="nav_xiaobie" bindtap="huibenFn" data-url="{{data_lsit_hui.music_url}}">
+    <view class="left_nav_xiao">
+      <view class="txt1">{{data_lsit_hui.name}}</view>
+      <view class="txt2">好习惯从小开始，引导宝宝，培养宝宝</view>
+      <view class="clicklook">点击查看</view>
+    </view>
+    <image src="{{data_lsit_hui.music_image}}"></image>
+
+  </view>
+
+</view>
+<!-- <view class="tit_jiazhang">
+  <view class="left_jia">
+    <image src="../../image/xuexi.png"></image>
+    <view class="tit_jiz">家长学堂</view>
+  </view>
+  <view class="gengduo" bindtap="xueshopFn">
+    <view>更多</view>
+    <image src="../../image/chakangengduo.png"></image>
+  </view>
+</view>
+<view class="cont_jiazhang">
+  <view class="nav_view">
+    <view class="tit_jia1">如何对孩子说不</view>
+    <view class="tit_jia2">跟小菜老师学习成为宝宝心中的美丽天小菜老师</view>
+  </view>
+
+</view>
+<view class="nav_bot_view" bindtap="delitFn">
+  <view class="left">
+    <image src="../../image/1.png"></image>
+    <view class="left_right_txt">
+      <view class="txt_bot_navciter">孩子是“管”还是“管理”，效果千差万别</view>
+      <view class="bot_icon">
+        <view class="yonghu">
+          <image src="../../image/yonghu.png"></image>
+          <view>小米粒</view>
+        </view>
+        <view class="look_cha">
+          <image src="../../image/yuedu.png"></image>
+          <view>32阅读</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <image class="bot_img" src="../../image/12.png"></image>
+</view>
+<view class="nav_bot_view">
+  <view class="left">
+    <image src="../../image/2@2x.png"></image>
+    <view class="left_right_txt">
+      <view class="txt_bot_navciter">孩子是“管”还是“管理”，效果千差万别</view>
+      <view class="bot_icon">
+        <view class="yonghu">
+          <image src="../../image/yonghu.png"></image>
+          <view>小米粒</view>
+        </view>
+        <view class="look_cha">
+          <image src="../../image/yuedu.png"></image>
+          <view>32阅读</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <image class="bot_img" src="../../image/12.png"></image>
+</view>
+<view class="nav_bot_view">
+  <view class="left">
+    <image src="../../image/3@2x.png"></image>
+    <view class="left_right_txt">
+      <view class="txt_bot_navciter">孩子是“管”还是“管理”，效果千差万别</view>
+      <view class="bot_icon">
+        <view class="yonghu">
+          <image src="../../image/yonghu.png"></image>
+          <view>小米粒</view>
+        </view>
+        <view class="look_cha">
+          <image src="../../image/yuedu.png"></image>
+          <view>32阅读</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <image class="bot_img" src="../../image/12.png"></image>
+</view> -->
+<view style="width:100%;height:100rpx;"></view>
+<view class="Shouquan" wx:if="{{!hasUserInfo}}">
+  <view class="titless">
+    <image src="../../image/6a723619c6da0cfae85f277ed21faf5.png"></image>
+  </view>
+  <view class="cont_tltsops">
+    微信登录授权
+  </view>
+  <view class="img_weix">
+    <image src="../../image/erweiam.png"></image>
+  </view>
+  <view class="txt_font">请授权登录以便继续使用</view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type="getUserInfo" bindgetuserinfo="getUserInfo">去授权 </button>
+  </view>
+</view>
+<view class="opt1" wx:if="{{!hasUserInfo}}"></view>
+<view class="Shouquan" wx:if="{{isShowxinxi}}">
+  <view class="titless">
+    <image src="../../image/6a723619c6da0cfae85f277ed21faf5.png"></image>
+  </view>
+  <view class="cont_tltsops">
+    小贝在家早教
+  </view>
+  <view class="txt_font">请完善宝宝信息后开始测评</view>
+  <view class="inp_plerta" bindtap="tibtnFn">填写信息</view>
+</view>
+<view class="opt1" bindtap="optiFn" wx:if="{{isShowxinxi}}"></view>
+<view class="Shouquan" wx:if="{{vipvideoIs&&vip_overshow}}">
+  <view class="titless">
+    <image src="../../image/6a723619c6da0cfae85f277ed21faf5.png"></image>
+  </view>
+  <!-- <view class="cont_tltsops">
+    小贝在家早教
+  </view> -->
+  <view class="txt_font" style="margin-top:50rpx;">您已观看6个视频</view>
+  <view class="txt_font">成为会员后继续观看</view>
+  <view class="inp_plerta" bindtap="kaivipFn" style="margin-top:100rpx;">购买会员 </view>
+</view>
+<view class="opt1" bindtap="vipvideoFn" wx:if="{{vipvideoIs&&vip_overshow}}"></view>

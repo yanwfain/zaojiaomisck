@@ -1,0 +1,124 @@
+<view wx:if="{{isshow1}}">
+  <view class="top_english">
+    EVALUATLON RESULTS
+  </view>
+  <view class="cp_txt">
+    测评结果 {{baby_year}}
+  </view>
+  <view class="cont_usernums">
+    <view class="yuan1">
+      <view class="yuan2">
+        <view class="yuan3">
+          <view class="yuan_bag"></view>
+          <view class="yuan4">
+            <view class="txt_ji">{{success}}</view>
+            <view class="fennum">{{all_score}}
+              <text>分</text> </view>
+            <view class="time">{{day}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cont_titl_res">
+    <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+    <view>从五大领域查看宝宝的成长</view>
+  </view>
+  <view class="cont_list" >
+    <view class="txt">{{listdata[0].subject_category_name?listdata[0].subject_category_name:'暂无信息'}}</view>
+    <view class="cont_tiao">
+      <view class="cont_delit_res" style="width:{{listdata1+1.7}}%;background: rgb(223, 127, 40);">
+        <view class="num">{{listdata[0].all_score}}</view>
+      </view>
+      <view class="shiba"></view>
+      <view class="ershisi"></view>
+      <view class="shibanum"> 18</view>
+      <view class="ershisinum"> 24</view>
+      <view class="sanshinum"> 30</view>
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="txt">{{listdata[1].subject_category_name?listdata[1].subject_category_name:'暂无信息'}}</view>
+    <view class="cont_tiao">
+      <view class="cont_delit_res" style="width:{{listdata2+1.7}}%;background: rgb(222, 103, 29);">
+        <view class="num">{{listdata[1].all_score}}</view>
+      </view>
+      <view class="shiba"></view>
+      <view class="ershisi"></view>
+      <view class="shibanum"> 18</view>
+      <view class="ershisinum"> 24</view>
+      <view class="sanshinum"> 30</view>
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="txt">{{listdata[2].subject_category_name?listdata[2].subject_category_name:'暂无信息'}}</view>
+    <view class="cont_tiao">
+      <view class="cont_delit_res" style="width:{{listdata3+1.7}}%;background: rgb(255, 174, 0);">
+        <view class="num">{{listdata[2].all_score}}</view>
+      </view>
+      <view class="shiba"></view>
+      <view class="ershisi"></view>
+      <view class="shibanum"> 18</view>
+      <view class="ershisinum"> 24</view>
+      <view class="sanshinum"> 30</view>
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="txt">{{listdata[3].subject_category_name?listdata[3].subject_category_name:'暂无信息'}}</view>
+    <view class="cont_tiao">
+      <view class="cont_delit_res" style="width:{{listdata4+1.7}}%;background: rgb(255, 209, 60);">
+        <view class="num">{{listdata[3].all_score}}</view>
+      </view>
+      <view class="shiba"></view>
+      <view class="ershisi"></view>
+      <view class="shibanum"> 18</view>
+      <view class="ershisinum"> 24</view>
+      <view class="sanshinum"> 30</view>
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="txt">{{listdata[4].subject_category_name?listdata[4].subject_category_name:'暂无信息'}}</view>
+    <view class="cont_tiao">
+      <view class="cont_delit_res" style="width:{{listdata5+1.7}}%;background: rgb(255, 200, 40);">
+        <view class="num">{{listdata[4].all_score}}</view>
+      </view>
+      <view class="shiba"></view>
+      <view class="ershisi"></view>
+      <view class="shibanum"> 18</view>
+      <view class="ershisinum"> 24</view>
+      <view class="sanshinum"> 30</view>
+    </view>
+  </view>
+</view>
+
+
+  <view class="top_title">
+    <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+    <view class="">测评说明</view>
+  </view>
+
+<!-- 
+  <view class="bot_fixed">
+    <view class="cepjie" bindtap="cepjieguoFn">测评结果</view>
+    <view class="cepshuo">测评说明</view>
+  </view> -->
+  <view class="cont_tit" wx:for="{{listdata}}">
+    <view class="title">
+      <view class="cont_tit_txt">{{item.subject_category_name}}</view>
+      <view class="res_txt">{{item.assess}}</view>
+    </view>
+    <view class="cont_txt_delit1">
+      {{item.note}}
+    </view>
+  </view>
+<view class="txt_bottom">
+  <view>因此推荐课程为：肢体技能、感官世界、逻辑思维、欢乐童谣、自理能力、自我管理</view> 
+  <view> 当小游戏重复次数达到一定数量后，宝贝就会给您意想不到的惊喜哦</view> 
+</view>
+
+
+<view style="width:100%;height:100rpx;"></view>
+<view class="bot_fixed">
+  <view class=" {{num_is==1?'active':''}}" id="ops1" data-num="1" bindtap="ooscep">测评结果</view>
+  <view class=" {{num_is==2?'active':''}}" id="ops" data-num="2" bindtap="cepshuomFn">测评说明</view>
+</view>

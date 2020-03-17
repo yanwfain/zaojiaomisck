@@ -1,0 +1,57 @@
+/* pages/audioall/audioall.wxss */
+.allAudio{
+  width:94%;
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+}
+.allAudio image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.txt{
+  font-size: 34rpx;
+
+}
+.cont_list{
+  width: 94%;
+  margin: 6rpx auto;
+  border-top: 2rpx solid rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  align-items: center;
+  padding: 20rpx 0;
+  position: relative;
+}
+.optcy{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: gray;
+  opacity: .6;
+}
+.left{
+  margin-left:40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 30rpx;
+
+}
+.txt_au{
+  font-size: 30rpx;
+
+}
+.right{
+  margin-right: 30rpx;
+  color: rgb(100, 100, 100);
+}

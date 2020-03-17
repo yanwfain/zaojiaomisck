@@ -1,0 +1,91 @@
+/* pages/mebao/mebao.wxss */
+page{
+  background: rgb(237, 237, 237);
+}
+.img_top{
+  background: url(https://hcc.baike360.cn/tupian.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 500rpx;
+
+}
+.cont_xinxi{
+    /* position: fixed; */
+    height: 800rpx;
+    border-radius: 20rpx;
+    /* z-index: 1; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top:-150rpx;
+    background: white;
+}
+.cont_list{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  width: 94%;
+  padding:0 4%;
+  border-bottom: 2rpx solid rgb(242, 242, 242);
+  height: 120rpx;
+  line-height: 120rpx;
+
+}
+.headimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  margin-right: 34rpx;
+}
+.cont_list .headimg image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  border-radius: 100%;
+}
+.left{
+  font-size: 30rpx;
+
+}
+input{
+  border: none;
+  font-size: 30rpx;
+  width: 200rpx;
+  color: gray;
+  text-align: right;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  margin-right: 50rpx;
+}
+/* .main-item-input {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2rpx solid gray;
+  padding: 10rpx;
+  border-radius: 10rpx;
+} */
+.picker-area-text{
+  color: gray;
+  width: 200rpx;
+  text-align: right;
+  margin-right: 30rpx;
+}
+.fisubmit{
+  
+  width: 80%;
+  font-size: 32rpx;
+  color: white;
+  background: rgb(248, 204, 73);
+  text-align: center;
+  line-height: 84rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  margin-top:70rpx;
+  margin-bottom: 100rpx;
+}

@@ -1,0 +1,68 @@
+/* pages/indexcepin/indexcepin.wxss */
+.cont{
+  width: 94%;
+  margin:20rpx auto;
+  padding: 20rpx;
+  border-bottom: 2rpx solid rgb(244, 244, 244);
+
+}
+.xuna_cont{
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 96%;
+
+}
+.xuna_cont view{
+  width: 92%;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 20rpx 4%;
+  font-size: 34rpx;
+}
+.active{
+  background: rgb(248, 204, 73);
+  color: white;
+}
+.cont_ti{
+  margin:0 auto;
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ font-size: 34rpx;
+  color: rgb(248, 204, 73);
+  margin-top: 50rpx;
+}
+.top{
+  width: 40%;
+  text-align: center;
+  font-size: 34rpx;
+  color: rgb(248, 204, 73);
+
+}
+.bott{
+   width: 40%;
+   text-align: center;
+}
+.tijiao{
+  width: 80%;
+  font-size: 34rpx;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: rgb(248, 204, 73);
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  left: 10%;
+  bottom: 5%;
+  border-radius: 40rpx;
+}
+.opt{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}

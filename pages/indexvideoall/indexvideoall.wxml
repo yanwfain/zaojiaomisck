@@ -1,0 +1,54 @@
+<view class="vip_time">
+  会员期限提醒：{{vipover?vipover:'暂未开通会员'}}
+</view>
+<block wx:for="{{list}}" wx:key="{{index}}">
+
+
+  <view class="cont_list" bindtap="bindtab_show" data-index="{{index}}">
+    <image src="../../image/1581059569(1).jpg"></image>
+    <view class="title_delit">
+      <view class="title_top">
+        {{today}}
+      </view>
+
+      <view class="titlle_bottom">
+        <!-- 小目标1：初次尝试 -->
+      </view>
+    </view>
+    <view class="tit_right_"></view>
+  </view>
+  <block>
+
+  <view data-index="{{index}}" data-index2="{{index_list}}" wx:if="{{index_list==index}}">
+   <view class="txt" wx:for="{{item}}" wx:for-item="img_pic" wx:key="img_pic"  wx:key="index" data-index2="{{img_pic}}" data-index1="{{index}}" >
+     {{index+1}}： {{img_pic.name}}
+      <text class="txt_txt">{{img_pic.subject_category_name}}</text>
+    </view>
+  </view>
+   
+  </block>
+</block>
+<!-- <view class="cont_list">
+  <image src="../../image/1581059569(1).jpg"></image>
+  <view class="title_delit">
+    <view class="title_top">
+      2岁23天
+    </view>
+    <view class="titlle_bottom">
+      小目标1：二次尝试
+    </view>
+  </view>
+
+</view>
+<view class="txt">
+  1：自己穿好外套
+  <text class="txt_txt">认知</text>
+</view>
+<view class="txt">
+  1：自己穿好外套
+  <text class="txt_txt">认知</text>
+</view>
+<view class="txt">
+  1：自己穿好外套
+  <text class="txt_txt">认知</text>
+</view> -->

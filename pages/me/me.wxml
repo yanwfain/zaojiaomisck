@@ -1,0 +1,71 @@
+<view class="top_user">
+  <view class="user_head">
+    <image src="{{head_img}}"></image>
+  </view>
+  <view class="names_user">{{name}}</view>
+  <view class="btn_all">
+    <view class="left">
+      <view class="nums">{{today2}}</view>
+      <view class="txt_num">学习天数</view>
+    </view>
+    <view class="right">
+      <view class="nums">{{num}}</view>
+      <view class="txt_num">已完成任务</view>
+    </view>
+  </view>
+</view>
+<view class="cont_list" bindtap="baobaoFn">
+    <image class="img1" src="../../image/xinxi.png"></image>
+    <view class="txt_left">宝宝信息</view>
+    <view class="txt_right"></view>
+</view>
+<view class="cont_list" bindtap="phonetelFn">
+    <image class="img1" src="../../image/dainhua.png"></image>
+    <view class="txt_left">绑定手机号</view>
+    <view class="phone">
+      {{mobile?mobile:'点击绑定手机号'}}
+    </view>
+    <view class="txt_right"></view>
+</view>
+<view class="cont_list" bindtap="vipFn_time_btn" wx:if="{{!vipover}}">
+    <image class="img1" src="../../image/tubiao.png"></image>
+    <view class="txt_left">会员信息</view>
+    <view class="phone">{{vipover?vipover:'暂无会员信息'}}</view>
+    <view class="txt_right"></view>
+</view>
+<view class="cont_list" bindtap="vipFn_time" wx:if="{{vipover}}">
+    <image class="img1" src="../../image/tubiao.png"></image>
+    <view class="txt_left">会员信息</view>
+    <view class="phone">到期时间：{{vipover}}</view>
+    <view class="txt_right"></view>
+</view>
+<view class="cont_list" bindtap="liuyanFn">
+    <image class="img1" src="../../image/xnxin.png"></image>
+    <view class="txt_left">留言专区</view>
+    <view class="txt_right"></view>
+</view>
+<view class="cont_list" bindtap="resfuiFn">
+    <image class="img1" src="../../image/wenhao.png"></image>
+    <view class="txt_left" >帮助与反馈</view>
+    <view class="txt_right"></view>
+</view>
+<view class="optict" wx:if="{{isSiuser}}" bindtap="ggopfn"></view>
+<view class="Shouquan" wx:if="{{isSiuser}}">
+  <view class="titless">
+    提示 ！
+  </view>
+  <view class="cont_tltsops">
+    您的账号未绑定手机号，点击获取
+  </view>
+  <view class="btn_button">
+    <view class="quxiao_btn" bindtap="ggopfn">
+      取消
+    </view>
+    <button class="butn_bottys" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">获取 </button>
+  </view>
+  <!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+    <view class='butt'>
+      <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登陆 </button>
+    </view>
+  </view> -->
+</view>

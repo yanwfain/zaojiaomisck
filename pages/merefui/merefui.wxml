@@ -1,0 +1,14 @@
+<view class="title">
+  常见问题
+</view>
+<view class="comment-btn">
+
+  <button wx:for="{{riderCommentList}}" wx:for-item="item" wx:key="item.index" bindtap="checkboxChangeFn" data-value="{{item.value}}" data-type="{{item.type}}" data-title="{{item.title}}" data-index="{{index}}" checked="{{item.selected}}" class="btn {{item.selected ? 'btn-selected' : ''}}">
+    {{item.title}}
+  </button>
+</view>
+<view class="title">遇见反馈</view>
+<textarea class="txtert" bindinput="bindinput" value=""></textarea>
+<view class="stnmit" bindtap="submit">
+提交反馈
+</view>

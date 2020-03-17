@@ -1,0 +1,32 @@
+<view class="tab_cont">
+  <view class="tab1 {{tid==1?'active':''}}" data-id="1" bindtap="tabFn">热门</view>
+  <view class="tab1 {{tid==2?'active':''}}" data-id="2" bindtap="tabFn">家庭教育</view>
+  <view class="tab1 {{tid==3?'active':''}}" data-id="3" bindtap="tabFn">习惯培养</view>
+</view>
+<view class="cont_list" bindtap="listFn">
+  <image src="../../image/1581315753(1).jpg"></image>
+  <view class="txt">
+    如何对孩子说“不”
+  </view>
+  <view class="txt1">
+    跟小菜老师学习如何成为宝宝心中的美丽小菜老师
+  </view>
+</view>
+<view class="cont_list">
+  <image src="../../image/1581315753(1).jpg"></image>
+  <view class="txt">
+    如何对孩子说“不”
+  </view>
+  <view class="txt1">
+    跟小菜老师学习如何成为宝宝心中的美丽小菜老师
+  </view>
+</view>
+<view class="cont_list">
+  <image src="../../image/1581315753(1).jpg"></image>
+  <view class="txt">
+    如何对孩子说“不”
+  </view>
+  <view class="txt1">
+    跟小菜老师学习如何成为宝宝心中的美丽小菜老师
+  </view>
+</view>

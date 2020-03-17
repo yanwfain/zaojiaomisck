@@ -1,0 +1,23 @@
+<!-- <view class="img_top">
+  <image src="../../image/00c61e5b35a51a93bce1cf729dbb408.png"></image>
+</view> -->
+<view class="_txt">
+  <rich-text nodes="{{list_img.note}}"></rich-text>
+</view>
+<!-- <view class="title_1">
+    亲爱的宝宝家长，您好
+</view>
+<view class="txt1">
+  本测评20道题，请认真阅读注意事项和工具准备，并严格按照测评题的描述进行操作，并根据宝宝的真实反应选择相应的选择，否则将影响测评结果，导致推送的课程不精确耽误宝宝的学习和成长，并根据宝宝的真实反应选择相应的选项，否则将影响测评结果，导致推送的课程不精确耽误宝宝的学习和成长。
+</view>
+<view class="buchong">补充说明</view>
+<view class="txt2">
+  <view>1:本测评20道题，请认真阅读注意事项和工具准备，并严格按照测评题的描述进行操作</view>
+  <view>1:本测评20道题，请认真阅读注意事项和工具准备，并严格按照测评题的描述进行操作</view>
+  <view>1:本测评20道题，请认真阅读注意事项和工具准备，并严格按照测评题的描述进行操作</view>
+  <view>1:本测评20道题，请认真阅读注意事项和工具准备，并严格按照测评题的描述进行操作</view>
+</view>
+<view class="img_ma">
+<image src="../../image/erweiam.png"></image>
+</view> -->
+<view class="cpcin" bindtap="cpstartFn">开始测评</view>

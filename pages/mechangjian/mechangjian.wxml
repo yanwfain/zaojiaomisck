@@ -1,0 +1,18 @@
+<view class="cont_list" wx:for="{{riderCommentList}}"> 
+  <view class="title">
+    <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+    <view class="txt_title">{{item.title}}</view>
+  </view>
+  <view class="txt">
+    <rich-text nodes="{{item.note}}"></rich-text>
+  </view>
+</view>
+<!-- <view class="cont_list"> 
+  <view class="title">
+    <image src="../../image/2fe6b660eb7ad17599fcccb8e05ea9b.png"></image>
+    <view class="txt_title">每个月的大目标是什么意思</view>
+  </view>
+  <view class="txt">
+    大目标是只对应月龄的宝宝努力可以做到的目标内容
+  </view>
+</view> -->

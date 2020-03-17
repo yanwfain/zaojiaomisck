@@ -1,0 +1,44 @@
+/* pages/indexxueshop/indexxueshop.wxss */
+.tab_cont{
+  width: 98%;
+  margin:20rpx auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.tab1{
+  width: 30%;
+  font-size: 32rpx;
+  color: rgb(99, 98, 98);
+  text-align: center;
+
+}
+.active{
+  padding-bottom: 4rpx;
+  border-bottom: 4rpx solid rgb(223, 127, 40);
+  color: rgb(223, 127, 40);
+}
+.cont_list{
+  width: 96%;
+  margin: 30rpx auto;
+  box-shadow:2px 1px 4px #999; 
+  border-radius: 10rpx;
+  padding-bottom: 30rpx;
+}
+.cont_list image{
+  width: 100%;
+  height: 300rpx;
+}
+.txt{
+  width: 94%;
+  margin: 30rpx auto;
+  font-size: 34rxp;
+
+}
+.txt1{
+  width: 94%;
+  font-size: 28rpx;
+  color: gray;
+  margin: 30rpx auto;
+}

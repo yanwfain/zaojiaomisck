@@ -1,0 +1,82 @@
+/* pages/merefui/merefui.wxss */
+.title{
+  width: 96%;
+  font-size: 32rpx;
+  font-weight: 600;
+  margin:20rpx auto;
+}
+.comment-btn{
+  width: 92%;
+  margin: 0 auto;
+    display:flex;
+    /* height:70rpx; */
+    /* overflow:hidden; */
+    margin-bottom:30rpx;
+    /* justify-content:space-between; */
+    /* background:white; */
+    flex-wrap:wrap; 
+    /* justify-content: center; */
+}
+.btn{
+      /* display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center; */
+      width: 30%;
+      height: 70rpx;
+      font-size: 24rpx;
+      line-height: 70rpx;
+      padding: 0;
+      margin-left:12rpx;
+      margin-right:12rpx;
+      /* margin-left:10rpx;
+      margin-right:40rpx; */
+      margin-top:20rpx;
+      /* border: 1px solid #dcdcdc; */
+      background: #fff;
+      border-radius:30rpx;
+      border: 2rpx solid rgb(70, 69, 69);
+      color: rgb(92, 92, 92);
+      text-align: center;
+  }
+.btn-selected{
+  color: white;
+  background: rgb(255, 174, 0);
+    width: 30%;
+      height: 70rpx;
+      font-size: 24rpx;
+      line-height: 70rpx;
+      padding: 0;
+      margin-left:12rpx;
+      margin-right:12rpx;
+      /* margin-left:10rpx;
+      margin-right:40rpx; */
+      margin-top:20rpx;
+      /* border: 1px solid #dcdcdc; */
+      /* background: #fff; */
+      border-radius:30rpx;
+      border: none;
+      text-align: center;
+  }
+.txtert{
+  width: 82%;
+  margin: 0 auto;
+  height: 400rpx;
+  padding: 4%;
+  font-size: 26rpx;
+  color:gray;
+  border:2rpx solid rgb(201, 202, 202);
+  border-radius: 6rpx;
+}
+.stnmit{
+  width: 86%;
+  font-size: 34rpx;
+  color: white;
+  background: rgb(248, 204, 73);
+  border-radius: 40rpx;
+  line-height: 86rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100rpx;
+
+}

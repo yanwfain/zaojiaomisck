@@ -1,0 +1,15 @@
+<view class="video_view">
+  <video src="{{listAarry.video_url}}"></video>
+</view>
+<view class="ren_title">
+  <!-- <view class="ren_view">认知</view> -->
+  <view class="chuan_title">{{listAarry.name}}</view>
+</view>
+<view class="title_ke">
+  课程介绍
+</view>
+<view class="tit_cailiao">
+    <rich-text nodes="{{listAarry.description}}"></rich-text>
+</view>
+
+<view class="butn" bindtap="subsit">学习完成</view>

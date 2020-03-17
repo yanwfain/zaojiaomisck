@@ -1,0 +1,97 @@
+<view class="img_autode">
+  <image src="{{image}}"></image>
+
+</view>
+<view class="num_title">
+  <view class="left1">
+    <view class="y1"></view>
+    <view class="y2"></view>
+    <view class="y3"></view>
+  </view>
+  <view class="yuan_title_num">{{name}}</view>
+  <view class="right">
+    <view class="y3"></view>
+    <view class="y2"></view>
+    <view class="y1"></view>
+  </view>
+</view>
+<view class="tiao">
+
+
+</view>
+<view class='audioPlayer'>
+  <!-- <audio src="{{audiolist[0].audiosrc}}" poster="{{poster}}" name="{{name}}" author="{{author}}"></audio> -->
+  <view class='player'>
+    <!-- <image src='{{audiolist[0].coverimg}}' class='audioBack'></image> -->
+
+    <view class='audioControls'>
+      <view class='flex'>
+        <view class='time' >
+          {{showTime1}}
+        </view>
+        <!-- <view class='time' wx:else>
+          缓冲中..
+        </view> -->
+        <!-- <view class='bottom' catchtap='playAudio'>
+         
+          <view wx:if="{{isPlayAudio}}">
+            <image src='../../image/0c043a02c3710a755e0323e436e7309.png' />
+          </view>
+          <view wx:else>
+            <image src='../../image/ship.png' />
+          </view>
+        </view> -->
+        <view class='slider'>
+          <slider bindchange='sliderChange' activeColor='orange' backgroundColor="gray" block-color="orange" block-size="12" value='{{audioTime}}' />
+             <!-- <slider disabled="disabled" activeColor='orange' backgroundColor="gray" block-color="orange" block-size="12" value='{{audioTime}}' /> -->
+        </view>
+        <view class='time'>
+          {{showTime2}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="botome">
+  <view class="aulist" bindtap="listFn" wx:if="{{url_id==2}}">
+    <image src="../../image/9.png"></image>
+  </view>
+  <view class="topau" bindtap="topFn"  wx:if="{{url_id==2}}">
+    <image src="../../image/shangyishou.png"></image>
+  </view>
+  <view class="start" catchtap='playAudio'>
+
+    <!-- 按钮 -->
+    <view wx:if="{{isPlayAudio}}">
+      <image class="img_stbtn" src='../../image/0c043a02c3710a755e0323e436e7309.png' />
+    </view>
+    <view wx:else>
+      <image class="img_stbtn" src='../../image/ship.png' />
+    </view>
+  </view>
+  <view class="topau" bindtap="botFn"  wx:if="{{url_id==2}}">
+    <image src="../../image/xiayizhou.png"></image>
+  </view>
+  <button open-type="share" class="resssurt"  wx:if="{{url_id==2}}">
+    <image src="../../image/fenxiang@2x.png"></image>
+
+  </button>
+</view>
+<view class="optict" wx:if="{{islist}}" bindtap="listFNis"></view>
+<view class="opt_view" wx:if="{{islist}}">
+  <view class="cont">
+    <view class="cont_list" bindtap="bindautioFn" wx:for="{{list}}" wx:key='{{index}}' data-name="{{item.name}}" data-image="{{item.music_image}}" data-url="{{item.music_url}}" data-index="{{index}}" data-max_score='{{item.max_score}}'>
+      <view class="optcy" catchtap="bin_wei" wx:if="{{item.max_score>0}}"></view>
+      <view class="left">
+        <image src="{{item.music_image}}"></image>
+        <view class="txt_au">{{item.name}}</view>
+      </view>
+      <view class="right">
+        {{item.createtime}}
+      </view>
+    </view>
+    
+    <view style="width:100%;height:100rpx;"></view>
+  </view>
+  <view class="bot_guanbi" bindtap="listFNis" >关闭</view>
+</view>

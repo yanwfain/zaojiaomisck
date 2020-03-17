@@ -1,0 +1,61 @@
+<view class="img_top">
+
+</view>
+<view class="cont_xinxi">
+  <!-- <view class="cont_list" bindtap="uploadimg"> -->
+  <view class="cont_list" >
+    <view class="left">头像</view>
+    <view class="headimg">
+      <image src="{{upload_picture_list}}" wx:if="{{upload_picture_list != ''}}"></image>
+      <image src="{{head_img}}" wx:else></image>
+    </view>
+    <!-- <image src="../../image/10.png"></image> -->
+  </view>
+  <view class="cont_list">
+    <view class="left">姓名</view>
+    <input placeholder="请输入姓名" bindinput="inpname" value="{{name}}" />
+  </view>
+  <view class="cont_list">
+    <view class="left">性别</view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChange" value="{{ pickerProData.index }}" range="{{ pickerProData.items }}">
+        <view class="picker-area-text">
+          {{pickerProData.items[pickerProData.index]}}
+        </view>
+      </picker>
+      <!-- <view class="rigt_txt"></view> -->
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="left">生日</view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChanges" mode="date" value="{{op}}" wx:if="{{!year}}">
+        <view class="picker-area-text">
+          {{mony?mony:"请选择日期"}}
+        </view>
+      </picker>
+      <view class="picker-area-text" wx:if="{{year}}">
+          {{year}}
+        </view>
+      <!-- <view class="rigt_txt"></view> -->
+    </view>
+  </view>
+  <view class="cont_list">
+    <view class="left">身高</view>
+    <view class="right">
+      <input placeholder="请输入身高" bindinput="shnnumFn" value="{{shnnum}}" />
+      <view wx:if="{{shnnum}}">cm</view> 
+    </view>
+
+  </view>
+  <view class="cont_list">
+    <view class="left">体重</view>
+    <view class="right">
+      <input placeholder="请输入体重" bindinput="tinumFn" value="{{tinum}}" />
+      <view wx:if="{{tinum}}">kg</view> 
+    </view>
+  </view>
+</view>
+<view class="fisubmit" bindtap="submit">
+  保存
+</view>

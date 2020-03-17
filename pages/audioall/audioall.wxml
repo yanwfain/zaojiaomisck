@@ -1,0 +1,26 @@
+<!-- <view class="allAudio">
+  <image src="../../image/kaishi.png"></image>
+  <view class="txt">全部播放</view>
+</view> -->
+<block wx:for="{{list}}">
+<view class="cont_list" bindtap="bindautioFn"   data-url="{{item.music_url}}" data-image="{{item.music_image}}" data-name="{{item.name}}">
+  <view class="optcy" catchtap="bin_wei" wx:if="{{item.max_score>0}}"></view>
+  <view class="left">
+    <image src="{{item.music_image}}"></image>
+    <view class="txt_au">{{item.name}}</view>
+  </view>
+  <view class="right">
+    {{item.createtime}}
+  </view>
+</view>
+<!-- <view class="cont_list">
+  <view class="left">
+    <image src="../../image/10.png"></image>
+    <view class="txt_au">小心心</view>
+  </view>
+  <view class="right">
+    2020.02.29
+  </view>
+</view> -->
+</block>
+
